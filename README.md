@@ -1,4 +1,5 @@
 ## JavaLeetCode
 
 * Package LeetCode：To learn algorithm from LeetCode([linkTo](https://leetcode.com))
-* Package PlayWithAlgorithm：A practice course of algorithm from imooc([linkTo](https://coding.imooc.com/class/71.html)) 
+
+I create this repository to learn how to write java code from LeetCode. I wish I could keep going!
