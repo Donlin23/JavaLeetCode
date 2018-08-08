@@ -12,7 +12,7 @@ import java.util.*;
 public class isValid {
     public static void main(String[] args) {
         String s = "()[]{}";
-//        Map<Character, Character> map = new HashMap<>();
+        //        Map<Character, Character> map = new HashMap<>();
 //        map.put('(', ')');
 //        map.put('{', '}');
 //        map.put('[', ']');
