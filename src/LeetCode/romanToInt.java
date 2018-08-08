@@ -6,7 +6,8 @@ import java.util.HashMap;
  * @Author: Donlin
  * @Date: Created in 20:02 2018/8/7
  * @Version: 1.0
- * @Description:
+ * @Description: Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
+ * @Link: https://leetcode-cn.com/problems/roman-to-integer/description/
  */
 public class romanToInt {
     public static void main(String[] args) {
