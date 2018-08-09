@@ -4,53 +4,80 @@ package LeetCode;
  * @Author: Donlin
  * @Date: Created in 18:25 2018/8/1
  * @Version: 1.0
- * @Description:
+ * @Description: You are given two non-empty linked lists representing two non-negative integers.
+ * The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
+ * @Link: https://leetcode-cn.com/problems/add-two-numbers/description/
  */
 public class addTwoNumbers {
+
+    public static void main(String[] args) {
+        int a = 1;
+        int b = 99999;
+
+        ListNode l1 = ItoL(a);
+        ListNode l2 = ItoL(b);
+        printListNode(l1);
+        printListNode(l2);
+        printListNode(addTwoNumbers(l1, l2));
+    }
+
+    // data struct
     static class ListNode{
         int val;
         ListNode next;
         ListNode(int x){ val = x; }
     }
 
-    public static ListNode addTwoNumbers_2(ListNode l1, ListNode l2){
-        if (l1 == null || l2 == null){
-            return null;
+    public static ListNode addTwoNumbers(ListNode l1, ListNode l2){
+        if (l1 == null){
+            return l2;
         }
-
-        ListNode head = new ListNode((l1.val + l2.val) % 10);
-        int shiftAdd = (l1.val + l2.val) / 10;      // set as a add flag to shift
-        ListNode end = head;
-        int temp1,temp2;
-
-        while (true){
-            if ((l1 = l1.next) == null){
-                if (shiftAdd == 0){
-                    end.next = l2.next;
-                    return head;
-                }else {
-                    temp1 = 0;
-                }
-            }else {
-                temp1 = l1.val;
-            }
-            if ((l2 = l2.next) == null){
-                if (shiftAdd == 0){
-                    end.next = l1.next;
-                    return head;
-                }else {
-                    temp2 = 0;
-                }
-            }else {
-                temp2 = l2.val;
-            }
-
-            int temp = temp1 + temp2 + shiftAdd;
-            shiftAdd = temp / 10;
-            ListNode tempNode = new ListNode(temp % 10);
-            end.next = tempNode;
-            end = end.next;
+        if (l2 == null){
+            return l1;
         }
+        ListNode head = null;
+        ListNode end = null;
+        int shiftAdd = 0;
+        while(l1 != null && l2 != null){
+            int temp = l1.val + l2.val + shiftAdd;
+            ListNode cursor = new ListNode(temp % 10);
+            if (head == null && end == null){
+                head = cursor;
+                end = cursor;
+            }else {
+                end.next = cursor;
+                end = end.next;
+            }
+            if (temp / 10 != 0){ shiftAdd = 1; }else { shiftAdd = 0; } // shiftAdd = (temp/10!=0)? 1:0;
+            l1 = l1.next;
+            l2 = l2.next;
+        }
+        if (shiftAdd == 0){     // shiftAdd = 0, l1 exist/l2 exist/nor exist
+            if (l1 == null && l2 != null){
+                end.next = l2;
+            }else if (l2 == null && l1 != null){
+                end.next = l1;
+            }else {
+                end.next = null;
+            }
+        }else {                 // shiftAdd = 1, l1 exist/l2 exist/nor exist
+            if (l1 == null && l2 == null){
+                end.next = new ListNode(shiftAdd);
+            }else {
+                ListNode existList = (l1==null)? l2:l1;
+                while(existList!=null){
+                    int temp = existList.val + shiftAdd;
+                    if (temp / 10 != 0){ shiftAdd = 1; }else { shiftAdd = 0; } // shiftAdd = (temp/10!=0)? 1:0;
+                    end.next = new ListNode(temp % 10);
+                    end = end.next;
+                    existList = existList.next;
+                }
+                if (shiftAdd == 1){
+                    end.next = new ListNode(shiftAdd);
+                }
+            }
+        }
+        return head;
     }
 
     public static ListNode addTwoNumbers_1(ListNode l1, ListNode l2){
@@ -95,16 +122,4 @@ public class addTwoNumbers {
         System.out.println();
     }
 
-    public static void main(String[] args) {
-        int a = 342;
-        int b = 465;
-
-        ListNode l1 = ItoL(342);
-        ListNode l2 = ItoL(465);
-        printListNode(l1);
-        printListNode(l2);
-        ListNode resultListNode = addTwoNumbers_1(l1, l2);
-        printListNode(resultListNode);
-
-    }
 }
