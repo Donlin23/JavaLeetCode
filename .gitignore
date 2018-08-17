@@ -5,3 +5,7 @@
 # Java .class file
 out/
 *.class
+
+# file
+*.rar
+*.zip
