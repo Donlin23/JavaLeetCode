@@ -7,7 +7,7 @@ package LeetCode;
  * @Description: Given a sorted array and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
  * @Link: https://leetcode-cn.com/problems/search-insert-position/description/
  */
-public class searchInsert {
+public class leetcode_035 {
     public static void main(String[] args) {
 
         int[] nums = {};

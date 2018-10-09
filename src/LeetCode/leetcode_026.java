@@ -7,7 +7,7 @@ package LeetCode;
  * @Description: Given a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length.
  * @Link: https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/description/
  */
-public class removeDuplicates {
+public class leetcode_026 {
     public static void main(String[] args) {
         int[] nums = {0,0,1,1,1,2,2,3,3,4};
         System.out.println(removeDuplicates(nums));

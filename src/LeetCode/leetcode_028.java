@@ -4,10 +4,10 @@ package LeetCode;
  * @Author: Donlin
  * @Date: Created in 10:18 2018/8/12
  * @Version: 1.0
- * @Description: Implement strStr(). It means String.indexOf() implement.
+ * @Description: Implement leetcode_028(). It means String.indexOf() implement.
  * @Link: https://leetcode-cn.com/problems/implement-strstr/description/
  */
-public class strStr {
+public class leetcode_028 {
     public static void main(String[] args) {
 
         String haystack = "mississippi";

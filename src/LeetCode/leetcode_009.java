@@ -7,7 +7,7 @@ package LeetCode;
  * @Description: Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
  * @link: https://leetcode-cn.com/problems/palindrome-number/description/
  */
-public class isPalindrome {
+public class leetcode_009 {
     public static void main(String[] args) {
         int x = 123454321;
         System.out.println(isPalindrome(x));

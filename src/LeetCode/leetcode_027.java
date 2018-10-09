@@ -7,7 +7,7 @@ package LeetCode;
  * @Description: Given an array nums and a value val, remove all instances of that value in-place and return the new length.
  * @Link: https://leetcode-cn.com/problems/remove-element/description/
  */
-public class removeElement {
+public class leetcode_027 {
     public static void main(String[] args) {
 
         int[] nums = {3,3};

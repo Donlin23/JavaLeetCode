@@ -7,10 +7,10 @@ import java.util.List;
  * @Author: Donlin
  * @Date: Created in 18:51 2018/8/2
  * @Version: 1.0
- * @Description: Given a 32-bit signed integer, reverse digits of an integer.
- * @link: https://leetcode-cn.com/problems/reverse-integer/description/
+ * @Description: Given a 32-bit signed integer, leetcode_007 digits of an integer.
+ * @link: https://leetcode-cn.com/problems/leetcode_007-integer/description/
  */
-public class reverse {
+public class leetcode_007 {
     public static void main(String[] args) {
 
         int num = -1534236469;

@@ -10,7 +10,7 @@ import java.util.Set;
  * @Description: Given a string, find the length of the longest substring without repeating characters.
  * @Link: https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/description/
  */
-public class lengthOfLongestSubstring {
+public class leetcode_003 {
     public static void main(String[] args) {
         String s = "dddweu";
         System.out.println(lengthOfLongestSubstringFromBestLeetCode(s));

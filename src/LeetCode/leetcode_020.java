@@ -9,7 +9,7 @@ import java.util.*;
  * @Description: Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
  * @Link: https://leetcode-cn.com/problems/valid-parentheses/description/
  */
-public class isValid {
+public class leetcode_020 {
     public static void main(String[] args) {
         String s = "()[]{}";
         //        Map<Character, Character> map = new HashMap<>();

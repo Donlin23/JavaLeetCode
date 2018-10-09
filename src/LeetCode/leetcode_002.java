@@ -5,10 +5,10 @@ package LeetCode;
  * @Date: Created in 18:25 2018/8/1
  * @Version: 1.0
  * @Description: You are given two non-empty linked lists representing two non-negative integers.
- * The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
+ * The digits are stored in leetcode_007 order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
  * @Link: https://leetcode-cn.com/problems/add-two-numbers/description/
  */
-public class addTwoNumbers {
+public class leetcode_002 {
 
     public static void main(String[] args) {
         int a = 1;

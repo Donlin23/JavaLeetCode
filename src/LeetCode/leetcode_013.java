@@ -9,7 +9,7 @@ import java.util.HashMap;
  * @Description: Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
  * @Link: https://leetcode-cn.com/problems/roman-to-integer/description/
  */
-public class romanToInt {
+public class leetcode_013 {
     public static void main(String[] args) {
 
         String s = "LVIII";

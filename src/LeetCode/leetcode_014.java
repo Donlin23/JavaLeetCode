@@ -7,7 +7,7 @@ package LeetCode;
  * @Description: Write a function to find the longest common prefix string amongst an array of strings.
  * @link: https://leetcode-cn.com/problems/longest-common-prefix/description/
  */
-public class longestCommonPrefix {
+public class leetcode_014 {
     public static void main(String[] args) {
 
         String[] s = {};
