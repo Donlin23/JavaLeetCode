@@ -47,9 +47,4 @@ public class leetcode_004 {
         return (sums[sums.length/2]+sums[sums.length/2-1])/2.0;
     }
 
-    // 时间复杂度为O(log(m+n))
-    public static double findMedianSortedArrays2(int[] nums1, int[] nums2){
-
-        return 0.0;
-    }
 }
